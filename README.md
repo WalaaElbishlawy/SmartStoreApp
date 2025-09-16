@@ -62,6 +62,28 @@ This project demonstrates Angular 20 standalone components, directives, pipes, a
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Installation
+
+Clone the repository:
+
+- git clone https://github.com/YourUsername/EarthViewHub.git
+
+ Navigate to the project folder:
+
+- cd EarthViewHub
+
+
+Install dependencies:
+
+- npm install
+
+
+ Run the application:
+
+- ng serve
+
+Open your browser at http://localhost:4200
+
 ## 🛠️Tech stack
 
 - Angular CLI version 20.3.1.
