@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center mt-3">
+  <div class="card shadow-sm" style="max-width: 300px; width: 100%;">
+    <img [src]="product.Img" [alt]="product.Name" class="card-img-top product-img" />
+
+    <div class="card-body text-center">
+      <h5 class="card-title text-success">Product Details</h5>
+      <p class="card-text"><strong>Name:</strong> {{ product.Name }}</p>
+      <p class="card-text"><strong>Price:</strong> {{ product.Price | currency:'USD' }}</p>
+      <p class="card-text"><strong>Quantity:</strong> {{ product.Quantity }}</p>
+
+      <button class="btn btn-danger w-100 mt-2" (click)="onClose()">
+        Close Details
+      </button>
+    </div>
+  </div>
+</div>
