@@ -1,4 +1,4 @@
-# SmartStore App
+# 🛒 SmartStore App
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
 
@@ -44,7 +44,7 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ng test
 ```
 
-## Features
+## 🚀 Features
 
 - Product catalog displayed in card format
 
@@ -62,6 +62,9 @@ This project demonstrates Angular 20 standalone components, directives, pipes, a
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+## 🛠️Tech stack
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular CLI version 20.3.1.
+- TypeScript
+- Bootstrap V5.3
+
