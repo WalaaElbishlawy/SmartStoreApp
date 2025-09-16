@@ -24,7 +24,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 Clone the repository:
 
-- git clone https://github.com/YourUsername/EarthViewHub.git
+- git clone https://github.com/YourUsername/SmartStoreApp.git
 
  Navigate to the project folder:
 
