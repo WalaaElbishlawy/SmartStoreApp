@@ -1,4 +1,4 @@
-# Day2
+# SmartStore App
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
 
@@ -44,13 +44,21 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ng test
 ```
 
-## Running end-to-end tests
+## Features
 
-For end-to-end (e2e) testing, run:
+- Product catalog displayed in card format
 
-```bash
-ng e2e
-```
+- Search functionality with two-way binding
+
+- Dynamic buy button that updates product quantity
+
+- Product details view for each item
+
+- Visual effects like hover highlight on product cards
+
+- Fully responsive layout using Bootstrap 5
+
+This project demonstrates Angular 20 standalone components, directives, pipes, and reactive UI features for a simple online store
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
