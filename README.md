@@ -67,4 +67,5 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 - Angular CLI version 20.3.1.
 - TypeScript
 - Bootstrap V5.3
+- HTML & CSS
 
