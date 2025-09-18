@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Products } from "./Components/products/products";
 import { Navbar } from "./Components/navbar/navbar";
 import { Footer } from './Components/footer/footer';
+import { Clock } from "./Components/clock/clock";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Products, Navbar,Footer],
+  imports: [RouterOutlet, Navbar, Footer, Clock],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Day2');
+  protected readonly title = signal('Day4');
+  showClock: boolean = true;
 }

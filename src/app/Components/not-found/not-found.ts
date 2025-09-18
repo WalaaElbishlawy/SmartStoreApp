@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-not-found',
   imports: [RouterModule],
-  templateUrl: './navbar.html',
-  styleUrl: './navbar.css'
+  templateUrl: './not-found.html',
+  styleUrl: './not-found.css'
 })
-export class Navbar {
+export class NotFound {
 
 }

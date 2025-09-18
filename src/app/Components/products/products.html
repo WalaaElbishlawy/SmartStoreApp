@@ -1,14 +1,7 @@
-<!--Task 4 search use two-binding way-->
-<div class="container mb-4">
-  <input type="text" class="form-control"
-         placeholder="Search by product name..."
-         [(ngModel)]="searchText">
-</div>
 
 <div class="container">
   <div class="row g-4">
-    <!--Task 2 -b (1)Use property binding [src])  &(2)	Loop on products and display them in cards.-->
-    @for (product of filteredProducts; track product.ID)
+    @for (product of filteredList; track product.ID)
     {
       <div class="col-12 col-sm-6 col-md-4">
         <div appProductCard class="card h-100 shadow-sm">
@@ -21,7 +14,6 @@
             <p class="card-text mb-1"><strong>Date:</strong> {{ today | date:'fullDate' }}</p>
             <p class="card-text mb-1"><strong>Card:</strong> {{ creditCardNumber | creditCard }}</p>
 
-            <!--Task 3 b)	Make switch case on product quantity (last one item , last two item , out of stock , in stock).-->
             @switch (product.Quantity) {
               @case (0) {
                 <p class="text-danger fw-bold">Out of stock</p>
@@ -37,18 +29,16 @@
               }
             }
 
-            <!--a)Task 3 (a),(c)	Disable button buy when the products with Quantity = 0-->
             <div class="d-flex gap-2">
               <button class="btn btn-success flex-fill mt-2"
                   (click)="buyProduct(product)"
                   [disabled]="product.Quantity === 0">
                   <i class="bi bi-cart4"></i>
-                Buy
+                Add To Cart
               </button>
 
-              <!--Task 3 d)	Add details button with each product when clicked, display product details in alert.-->
               <button class="btn btn-secondary flex-fill mt-2"
-                  (click)="showDetails(product)">
+                  (click)="goToDetails(product.ID)">
                   <i class="bi bi-ticket-detailed"></i>
                 Details
               </button>
@@ -60,11 +50,3 @@
   </div>
 </div>
 
-<!-- Child -->
-@if (selectedProduct)
-{
-  <app-product-details
-    [product]="selectedProduct"
-    (close)="hideDetails()">
-  </app-product-details>
-}

@@ -1,4 +1,3 @@
-//a. Interface named IProduct
 export interface IProduct {
   ID : number;
   Name : string;

@@ -1,0 +1,10 @@
+.navbar .nav-link.active {
+  color:rgb(13, 192, 13) ;
+  border-radius: 5px;
+}
+
+.navbar .nav-link:hover {
+  color: white ;
+  background-color: rgb(120, 202, 120) ;
+  border-radius: 5px;
+}
